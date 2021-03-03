@@ -1,18 +1,20 @@
 
 exports.min = function min (array) {
-    
-  return Math.min.apply(...array);
-}
+    for(i=0; i<array.length; i++){
+        
+  return Math.min(array[i]);
+}}
 
 exports.max = function max (array) {
-  return Math.max.apply(...array);
-}
-
+   for(i=0; i<array.length; i++){
+        
+  return Math.max(array[i]);
+}}
 exports.avg = function avg (array) {
     
     for(i=0; i<array.length; i++){
-      let sum+=array[i];
+      let sum+=array[i];return sum/array.length;
     }
-    return sum/array.length;
+    
   
 }
