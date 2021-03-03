@@ -1,14 +1,12 @@
 
 exports.min = function min (array) {
-    for(i=0; i<array.length; i++){
-        
-  return Math.min(array[i]);
-}}
+   
+  return Math.min.apply(null,array);
+}
 
-exports.max = function max (array) {
-   for(i=0; i<array.length; i++){
-        
-  return Math.max(array[i]);
+exports.max = function max (array) {    
+    
+  return Math.max.apply(null,array);
 }}
 exports.avg = function avg (array) {
     
